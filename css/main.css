@@ -1,0 +1,464 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #2c2b2b;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Black Ops One', 'roboto', sans-serif;
+}
+
+nav {
+    background: white;
+    height: 7vh;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid rgb(160, 159, 159);
+    font-weight: 700;
+    z-index: 100;
+}
+
+#logo {
+    height: 7vh;
+    float: left;
+    margin-left: 1%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 1%;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 7vh;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #030303;
+    font-size: 1.5vh;
+    padding: 1vh 1.5vh;
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+#navcta {
+    background: black;
+    color: white;
+    border-color: black;
+}
+
+#navcta:hover {
+    background: #028ada;
+    border-color: #028ada;
+}
+
+a:hover {
+    border-color: #028ada;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 6vh;
+    color: black;
+    float: right;
+    line-height: 12vh;
+    margin-right: 10vh;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-wrapper {
+    background-image: url(../images/web4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.tagline{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    font-size: 5vh;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.herobg {
+    height: 100vh;
+    width: 100%;
+    background: #020202;
+    opacity: 0.3;
+}
+
+.tagline .btn {
+    position: relative;
+    top: 25vh;
+}
+
+.about-wrapper {
+    background-image: url(../images/web5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.about-content h1 {
+    position: absolute;
+    top: 114vh;
+    left: 10%;
+    font-size: 6vh;
+    font-family: 'Black Ops One', 'roboto', sans-serif;
+    color: white;
+}
+
+.about-content h2 {
+    position: absolute;
+    top: 121vh;
+    left: 10%;
+    font-size: 3vh;
+    color: white;
+}
+
+h2.certs {
+    position: absolute;
+    top: 127vh;
+    left: 10%;
+    font-size: 3vh;
+    font-family: 'Black Ops One''roboto', sans-serif;
+    color: #1caafd;
+}
+
+.about-content P {
+    position: absolute;
+    top: 137vh;
+    left: 10%;
+    font-size: 2vh;
+    width: 480px;
+}
+
+.about-content .btn {
+    position: relative;
+    top: 85vh;
+    left: 10%;
+}
+
+.services-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+
+.strength {
+    position: relative;
+    background-image: url(../images/strength.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 34%;
+    text-align: center;
+}
+
+.strength-content {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #3f3f3f;
+    opacity: .85;
+}
+
+.strength h1 {
+    position: relative;
+    top: -70vh;
+    font-size: 7vh;
+    color: white;
+}
+
+.strength p {
+    position: relative;
+    top: -70vh;
+    font-size: 2.5vh;
+    margin: 70px;
+}
+
+.strength .btn {
+    position: relative;
+    top: -60vh
+}
+
+.mobility {
+    position: relative;
+    background-image: url(../images/mobility.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 34%;
+    top: -100vh;
+    left: 33%;
+    text-align: center;
+}
+
+.mobility-content {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #3f3f3f;
+    opacity: .85;
+}
+
+.mobility h1 {
+    position: relative;
+    top: -70vh;
+    font-size: 7vh;
+    color: white;
+}
+
+.mobility p {
+    position: relative;
+    top: -70vh;
+    font-size: 2.5vh;
+    margin: 70px;
+}
+
+.mobility .btn {
+    position: relative;
+    top: -60vh
+}
+
+.nutrition {
+    position: relative;
+    background-image: url(../images/nutrition.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 34%;
+    top: -200vh;
+    left: 66%;
+    text-align: center;
+}
+
+.nutrition-content {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #3f3f3f;
+    opacity: .85;
+}
+
+.nutrition h1 {
+    position: relative;
+    top: -70vh;
+    font-size: 7vh;
+    color: white;
+}
+
+.nutrition p {
+    position: relative;
+    top: -70vh;
+    font-size: 2.5vh;
+    margin: 70px;
+}
+
+.nutrition .btn {
+    position: relative;
+    top: -60vh
+}
+
+.testimonials-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/web6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.testimonial-bg {
+    height: 100vh;
+    width: 100%;
+    background: #028ada;
+    opacity: .85;
+}
+
+.social-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: rgb(156, 156, 156);
+}
+
+.podcast-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: #028ada;
+}
+
+.contact-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: #383838;
+}
+
+.btn {
+    background: none;
+    font-size: 2vh;
+    font-weight: 700;
+    padding: 1.5vh 2.5vh;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    border-color: #028ada;
+    background: #028ada;
+}
+
+@media (max-width: 900px) {
+    nav {
+        height: 10vh;
+    }
+
+    #logo {
+        height: 10vh;
+    }
+
+    .checkbtn {
+        display: block;
+        margin-right: 10%;
+        margin-top: -1vh;
+    }
+    ul {
+        position: fixed;
+        width: 45%;
+        height: 100vh;
+        background: #e2e2e2;
+        top: 10vh;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 2vh;
+    }
+    
+    nav ul li a {
+        font-size: 2vh;
+        color: black;
+        border-color: #e2e2e2;
+    }
+    a.active {
+        color: #028ada;
+    }
+    a:hover {
+        border-color: #028ada;
+    }
+
+    #logo {
+        margin-left: 5%;
+    }
+
+    .tagline {
+        font-size: 4vh;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .about-content h1 {
+        font-size: 5vh;
+    }
+    
+    .about-content h2 {
+        font-size: 3vh;
+    }
+    
+    .about-content P {
+        font-size: 2.3vh;
+        width: 300px;
+    }
+    .about-content .btn {
+        top: 90vh;
+    }
+
+    .services-wrapper {
+        height: 165vh;
+    }
+
+    .strength, .strength-content {
+        top: 0;
+        left: 0;
+        height: 55vh;
+        width: 100%;
+    }
+
+    .mobility, .mobility-content {
+        top: 0;
+        left: 0;
+        height: 55vh;
+        width: 100%;
+    }
+
+    .nutrition, .nutrition-content {
+        top: 0;
+        left: 0;
+        height: 55vh;
+        width: 100%;
+    }
+
+    .strength h1, .mobility h1, .nutrition h1 {
+        font-size: 5vh;
+        top: -40vh;
+    }
+
+    .strength p, .mobility p, .nutrition p {
+        font-size: 3vh;
+        top: -48vh;
+    }
+
+    .strength .btn, .mobility .btn, .nutrition .btn {
+        font-size: 2vh;
+        top: -50vh;
+    }
+
+    .btn {
+        font-size: 3vh;
+    }
+    
+
+}
